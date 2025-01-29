@@ -1008,4 +1008,8 @@ body {
   .wrapper .main .news .news-grid {
     grid-template-columns: 1fr;
   }
+
+  .wrapper .main .cart-content .cart-summary {
+    text-align: center;
+  }
 }
