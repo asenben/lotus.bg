@@ -702,10 +702,6 @@ body {
     padding: 15px 0;
     border-bottom: 1px solid #000000;
   }
-
-  .wrapper .main .news .news-grid {
-    flex-direction: column;
-  }
 }
 
 .contact-container {
