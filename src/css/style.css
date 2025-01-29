@@ -420,22 +420,6 @@ body {
   font-size: 12px;
 }
 
-.wrapper .specials-container .daily-special .buy-button {
-  background-color: #ffd700;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #000;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.wrapper .specials-container .daily-special .buy-button:hover {
-  background-color: #ffa500;
-}
-
 .wrapper .main .cart-content {
   background-color: #fff;
   border-radius: 8px;
@@ -792,6 +776,13 @@ body {
   margin-bottom: 30px;
 }
 
+.wrapper .main .gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
 .wrapper .main .gallery .gallery-item {
   text-align: center;
   background-color: #f9f9f9;
@@ -988,17 +979,17 @@ body {
     width: 80%;
   }
 
-  .cart-summary {
+  .wrapper .main .cart-content .cart-summary {
     text-align: center;
   }
 
-  .cart-items {
+  .wrapper .main .cart-content .cart-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .cart-items li {
+  .wrapper .main .cart-content .cart-items li {
     flex-direction: column;
     align-items: center;
     padding: 15px 0;
@@ -1007,6 +998,16 @@ body {
 
   .wrapper .main .news .news-grid {
     grid-template-columns: 1fr;
+  }
+
+  .wrapper .main .gallery .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .wrapper .main .gallery .gallery-item {
+    font-size: 16px;
+    padding: 15px;
   }
 
   .wrapper .main .cart-content .cart-summary {
