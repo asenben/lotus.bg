@@ -561,133 +561,6 @@ body {
   background-color: #a00028;
 }
 
-@media (max-width: 750px) {
-  .wrapper .header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    padding: 10px;
-    overflow: hidden;
-    max-height: 124px;
-  }
-
-  .wrapper .header.expanded {
-    max-height: 500px;
-  }
-
-  .wrapper .header .navbar {
-    width: 100%;
-  }
-
-  .wrapper .header .navbar .toggle-menu {
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1.5rem;
-    color: #ffffff;
-    z-index: 2;
-  }
-
-  .wrapper .header .navbar .toggle-menu .fa-bars {
-    display: block;
-  }
-
-  .wrapper .header .navbar .toggle-menu .fa-xmark {
-    display: none;
-  }
-
-  .wrapper .header .navbar ul {
-    flex-direction: column;
-    visibility: hidden;
-    transform: scale(0, 0);
-    opacity: 0;
-    background-color: #800020;
-    width: 100%;
-    transform-origin: top left;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease, visibility 0s 0.5s;
-  }
-
-  .wrapper .header .navbar ul.show {
-    visibility: visible;
-    transform: scale(1, 1);
-    opacity: 1;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease;
-  }
-
-  .wrapper .header .navbar ul li {
-    text-align: left;
-  }
-
-  .wrapper .header .navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
-  }
-
-  .wrapper .header .navbar ul li a:hover {
-    color: #ffd700;
-  }
-
-  .wrapper .main .reservation form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .wrapper .main .reservation form .label-input {
-    display: contents;
-  }
-
-  .wrapper .main .reservation form .label-input input {
-    width: 100%;
-  }
-
-  .wrapper .footer .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .wrapper .footer .footer-container,
-  .footer-map,
-  .footer-social {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-
-  .wrapper .footer .footer-container .footer-map iframe {
-    height: 150px;
-  }
-
-  .wrapper .specials-navigation ul {
-    display: flex;
-    background-color: #ffffff;
-    border-radius: 10px;
-    flex-direction: column;
-    width: 80%;
-  }
-
-  .cart-summary {
-    text-align: center;
-  }
-
-  .cart-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .cart-items li {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid #000000;
-  }
-}
-
 .wrapper .contact-container {
   display: flex;
   justify-content: space-between;
@@ -1025,4 +898,135 @@ body {
 .wrapper .main .news .news-content .date {
   font-size: 14px;
   color: #888;
+}
+
+@media (max-width: 750px) {
+  .wrapper .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    max-height: 124px;
+  }
+
+  .wrapper .header.expanded {
+    max-height: 500px;
+  }
+
+  .wrapper .header .navbar {
+    width: 100%;
+  }
+
+  .wrapper .header .navbar .toggle-menu {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    color: #ffffff;
+    z-index: 2;
+  }
+
+  .wrapper .header .navbar .toggle-menu .fa-bars {
+    display: block;
+  }
+
+  .wrapper .header .navbar .toggle-menu .fa-xmark {
+    display: none;
+  }
+
+  .wrapper .header .navbar ul {
+    flex-direction: column;
+    visibility: hidden;
+    transform: scale(0, 0);
+    opacity: 0;
+    background-color: #800020;
+    width: 100%;
+    transform-origin: top left;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease, visibility 0s 0.5s;
+  }
+
+  .wrapper .header .navbar ul.show {
+    visibility: visible;
+    transform: scale(1, 1);
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+  }
+
+  .wrapper .header .navbar ul li {
+    text-align: left;
+  }
+
+  .wrapper .header .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+
+  .wrapper .header .navbar ul li a:hover {
+    color: #ffd700;
+  }
+
+  .wrapper .main .reservation form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper .main .reservation form .label-input {
+    display: contents;
+  }
+
+  .wrapper .main .reservation form .label-input input {
+    width: 100%;
+  }
+
+  .wrapper .footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapper .footer .footer-container,
+  .footer-map,
+  .footer-social {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .wrapper .footer .footer-container .footer-map iframe {
+    height: 150px;
+  }
+
+  .wrapper .specials-navigation ul {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .cart-summary {
+    text-align: center;
+  }
+
+  .cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cart-items li {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #000000;
+  }
+
+  .wrapper .main .news .news-grid {
+    grid-template-columns: 1fr;
+  }
 }
