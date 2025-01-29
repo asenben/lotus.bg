@@ -704,7 +704,7 @@ body {
   }
 }
 
-.contact-container {
+.wrapper .contact-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -715,67 +715,67 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-details {
+.wrapper .contact-container .contact-details {
   width: 40%;
 }
 
-.contact-details h1 {
+.wrapper .contact-container .contact-details h1 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #800020;
 }
 
-.contact-details p {
+.wrapper .contact-container .contact-details p {
   font-size: 1rem;
   color: #555;
   margin-bottom: 30px;
 }
 
-.contact-details .details p {
+.wrapper .contact-container .contact-details .details p {
   font-size: 1rem;
   margin-bottom: 15px;
   color: #555;
 }
 
-.contact-details .details p i {
+.wrapper .contact-container .contact-details .details p i {
   color: #800020;
   margin-right: 10px;
 }
 
-.contact-form-container {
+.wrapper .contact-container .contact-form-container {
   width: 55%;
 }
 
-.contact-form {
+.wrapper .contact-container .contact-form-container .contact-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-.contact-form .form-group {
+.wrapper .contact-container .contact-form-container .contact-form .form-group {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.contact-form .form-group label {
+.wrapper .contact-container .contact-form-container .contact-form .form-group label {
   font-size: 1rem;
   color: #000000;
 }
 
-.contact-form .form-group input,
-.contact-form .form-group textarea {
+.wrapper .contact-container .contact-form-container .contact-form .form-group input,
+.wrapper .contact-container .contact-form-container .contact-form .form-group textarea {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1rem;
 }
 
-.contact-form .form-group textarea {
+.wrapper .contact-container .contact-form-container .contact-form .form-group textarea {
   grid-column: span 2;
 }
 
-.contact-form button {
+.wrapper .contact-container .contact-form-container .contact-form button {
   max-width: 360px;
   grid-column: span 2;
   padding: 10px 15px;
@@ -788,42 +788,40 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
+.wrapper .contact-container .contact-form-container .contact-form button:hover {
   background-color: #a00028;
 }
 
 .wrapper .main .about {
-  max-width: 1200px; /* Центриране и ограничаване на ширината */
-  margin: 40px auto; /* Центриране по хоризонтала */
-  padding: 30px; /* Вътрешен отстъп */
-  background-color: #fff; /* Бял фон */
-  border-radius: 10px; /* Заоблени ъгли */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Сянка за изчистен вид */
+  max-width: 1200px; 
+  margin: 40px auto; 
+  padding: 30px; 
+  background-color: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* Заглавия */
 .wrapper .main .about h1,
 .wrapper .main .about h2 {
-  color: #800020; /* Червен цвят */
-  margin-bottom: 20px; /* Отстояние */
-  text-align: left; /* Подравняване на текста */
+  color: #800020; 
+  margin-bottom: 20px; 
+  text-align: left; 
 }
 
 .wrapper .main .about h1 {
-  font-size: 32px; /* По-голямо заглавие */
+  font-size: 32px; 
 }
 
 .wrapper .main .about h2 {
   font-size: 24px;
-  border-bottom: 2px solid #ffd700; /* Златна линия под заглавието */
+  border-bottom: 2px solid #ffd700; 
   padding-bottom: 5px;
 }
 
-/* Параграфи */
 .wrapper .main .about p {
   font-size: 18px;
   line-height: 1.8;
-  color: #333; /* Тъмен текст */
+  color: #333; 
   margin-bottom: 20px;
 }
 
@@ -839,44 +837,40 @@ body {
   margin-bottom: 10px;
 }
 
-/* Изображения */
 .wrapper .main .about img {
-  max-width: 100%; /* Адаптиране към ширината на контейнера */
-  height: auto; /* Запазване на пропорциите */
+  max-width: 100%; 
+  height: auto; 
   margin: 20px 0;
-  border-radius: 10px; /* Заоблени ъгли */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лека сянка */
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Стилове за дейностите */
 .wrapper .main .activities {
-  max-width: 1200px; /* Центриране и ограничаване на ширината */
+  max-width: 1200px; 
   margin: 40px auto;
   padding: 30px;
-  background-color: #fff; /* Бял фон */
+  background-color: #fff; 
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Сянка */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Заглавия */
 .wrapper .main .activities h1,
 .wrapper .main .activities h2 {
-  color: #800020; /* Червен цвят */
+  color: #800020; 
   margin-bottom: 20px;
 }
 
 .wrapper .main .activities h1 {
-  font-size: 32px; /* Основно заглавие */
+  font-size: 32px; 
   text-align: center;
 }
 
 .wrapper .main .activities h2 {
-  font-size: 24px; /* Подзаглавие */
-  border-bottom: 2px solid #ffd700; /* Златна линия под заглавията */
+  font-size: 24px; 
+  border-bottom: 2px solid #ffd700; 
   padding-bottom: 5px;
 }
 
-/* Текст */
 .wrapper .main .activities p {
   font-size: 18px;
   line-height: 1.8;
@@ -884,7 +878,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Списъци */
 .wrapper .main .activities ul {
   list-style-type: disc;
   margin-left: 20px;
@@ -896,55 +889,52 @@ body {
   margin-bottom: 10px;
 }
 
-/* Изображения */
 .wrapper .main .activities img {
   max-width: 100%;
   height: auto;
   margin: 20px 0;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лека сянка */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Таблица за цените */
-.price-table {
+.wrapper .main .activities .price-table {
   width: 100%;
-  border-collapse: collapse; /* Премахва двойните линии */
+  border-collapse: collapse; 
   margin: 20px 0;
-  background-color: #fff; /* Бял фон */
+  background-color: #fff; 
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Лека сянка */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-.price-table th,
-.price-table td {
+.wrapper .main .activities .price-table th,
+.wrapper .main .activities .price-table td {
   padding: 15px;
   text-align: left;
   font-size: 16px;
 }
 
-.price-table th {
-  background-color: #800020; /* Тъмночервен фон за заглавията */
-  color: #fff; /* Бял текст */
+.wrapper .main .activities .price-table th {
+  background-color: #800020; 
+  color: #fff; 
 }
 
-.price-table tbody tr:nth-child(even) {
-  background-color: #f8f8f8; /* Светлосив фон за редуване */
+.wrapper .main .activities .price-table tbody tr:nth-child(even) {
+  background-color: #f8f8f8; 
 }
 
-.price-table tbody tr:nth-child(odd) {
-  background-color: #fff; /* Бял фон */
+.wrapper .main .activities .price-table tbody tr:nth-child(odd) {
+  background-color: #fff; 
 }
 
-.price-table tbody tr:hover {
-  background-color: #ffd700; /* Златен цвят при задържане на мишката */
+.wrapper .main .activities .price-table tbody tr:hover {
+  background-color: #ffd700; 
 }
 
-.price-table td {
-  border-bottom: 1px solid #ddd; /* Линии между редовете */
+.wrapper .main .activities .price-table td {
+  border-bottom: 1px solid #ddd; 
 }
 
-/* Галерия */
 .wrapper .main .gallery {
   max-width: 1200px;
   margin: 40px auto;
@@ -967,7 +957,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* Решетка за галерията */
 .wrapper .main .gallery .gallery-grid {
   display: flex;
   flex-wrap: wrap;
@@ -976,7 +965,6 @@ body {
   padding: 20px;
 }
 
-/* Стил за елементите */
 .wrapper .main .gallery .gallery-item {
   text-align: center;
   background-color: #f9f9f9;
@@ -997,7 +985,6 @@ body {
   color: #555;
 }
 
-/* Секция Новини */
 .wrapper .main .news {
   max-width: 1200px;
   margin: 40px auto;
@@ -1020,14 +1007,12 @@ body {
   margin-bottom: 30px;
 }
 
-/* Решетка за новините */
 .wrapper .main .news .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
-/* Блокове за новини */
 .wrapper .main .news .news-item {
   background-color: #f9f9f9;
   border-radius: 10px;
