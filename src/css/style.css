@@ -726,14 +726,11 @@ body {
 
 .wrapper .contact-container .contact-form-container .contact-form .form-group input,
 .wrapper .contact-container .contact-form-container .contact-form .form-group textarea {
+  width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1rem;
-}
-
-.wrapper .contact-container .contact-form-container .contact-form .form-group textarea {
-  grid-column: span 2;
 }
 
 .wrapper .contact-container .contact-form-container .contact-form button {
