@@ -2,8 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Посетете нашия китайски ресторант, за да се насладите на уникални ястия, приготвени от майстор-готвачи. Вкусни предястия, основни ястия и десерти."/>
-    <meta name="keywords" content="китайски ресторант, китайска кухня, патица по пекински, доставка китайска храна"/>
+    <meta
+      name="description"
+      content="Посетете нашия китайски ресторант, за да се насладите на уникални ястия, приготвени от майстор-готвачи. Вкусни предястия, основни ястия и десерти."
+    />
+    <meta
+      name="keywords"
+      content="китайски ресторант, китайска кухня, патица по пекински, доставка китайска храна"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lotus.bg</title>
     <link rel="stylesheet" href="src/css/style.css" />
@@ -21,18 +27,99 @@
             <i class="fa-solid fa-xmark"></i>
           </article>
           <ul>
-            <li><a href="index.html" title="Начало" class="active">Начало</a></li>
+            <li>
+              <a href="index.html" title="Начало" class="active">Начало</a>
+            </li>
             <li><a href="menu.html" title="Меню">Меню</a></li>
             <li><a href="news.html" title="Новини">Новини</a></li>
             <li><a href="gallery.html" title="Галерия">Галерия</a></li>
             <li><a href="activities.html" title="Дейности">Дейности</a></li>
             <li><a href="about.html" title="За нас">За нас</a></li>
             <li><a href="contact.html" title="Контакти">Контакти</a></li>
-            <li class="cart"><a href="cart.html" title="Количка"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></a></li>
+            <li class="cart">
+              <a href="cart.html" title="Количка"
+                ><i class="fa-solid fa-bag-shopping"></i
+                ><span class="cart-count">0</span></a
+              >
+            </li>
           </ul>
         </nav>
       </header>
-      <main class="main"></main>
+      <main class="main">
+        <section class="activities">
+          <h1>Нашите Дейности</h1>
+          <p>
+            В Китайски ресторант "Лотус" се стремим да предложим на нашите
+            клиенти не само изключителна храна, но и незабравими преживявания.
+            Ето какво предлагаме:
+          </p>
+          <h2>Кулинарни Демонстрации</h2>
+          <p>
+            Потопете се в света на китайската кухня с нашите майстор-готвачи.
+            Научете как се приготвят класически ястия като:
+          </p>
+          <ul>
+            <li>Патица по пекински</li>
+            <li>Дъмплинги</li>
+            <li>Сладко-кисело пиле</li>
+          </ul>
+
+          <h2>Организация на Събития</h2>
+          <p>Предлагаме организиране на частни събития, включително:</p>
+          <ul>
+            <li>Рождени дни</li>
+            <li>Корпоративни вечери</li>
+            <li>Тематични вечери с китайска кухня</li>
+          </ul>
+          <h2>Доставка на храна</h2>
+          <p>
+            Не можете да дойдете при нас? Ние ще дойдем при вас! Предлагаме
+            бърза доставка на любимите ви китайски ястия до вашия дом или офис.
+          </p>
+          <h2>Специални Уроци</h2>
+          <p>
+            Запишете се за нашите кулинарни курсове и научете как да приготвяте
+            китайски ястия у дома. Подходящи както за начинаещи, така и за
+            напреднали готвачи.
+          </p>
+          <h2>Цени за Кулинарни Уроци</h2>
+          <p>
+            Разгледайте нашите специални предложения за кулинарни уроци,
+            подходящи за всяко ниво на умения:
+          </p>
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Курс</th>
+                <th>Продължителност</th>
+                <th>Цена</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Основи на китайската кухня</td>
+                <td>2 часа</td>
+                <td>50.00 лв</td>
+              </tr>
+              <tr>
+                <td>Приготвяне на дъмплинги</td>
+                <td>1.5 часа</td>
+                <td>40.00 лв</td>
+              </tr>
+              <tr>
+                <td>Тайните на пекинската патица</td>
+                <td>3 часа</td>
+                <td>80.00 лв</td>
+              </tr>
+              <tr>
+                <td>Сладко-кисели ястия</td>
+                <td>2 часа</td>
+                <td>60.00 лв</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
       <footer class="footer">
         <div class="footer-container">
           <div class="footer-section">
@@ -46,7 +133,15 @@
           </div>
           <div class="footer-map">
             <h4>Нашето местоположение</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d141186.90051236155!2d26.973957158968425!3d43.26975130737261!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a58a67f395c66b%3A0x4eda59530fcee61b!2sShumen!5e1!3m2!1sen!2sbg!4v1737835870406!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d141186.90051236155!2d26.973957158968425!3d43.26975130737261!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a58a67f395c66b%3A0x4eda59530fcee61b!2sShumen!5e1!3m2!1sen!2sbg!4v1737835870406!5m2!1sen!2sbg"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
           <div class="footer-social">
             <h4>Следвайте ни</h4>
@@ -61,7 +156,7 @@
         <div class="footer-copyright">
           <p>© 2025 Китайски ресторант "Лотус".</p>
         </div>
-      </footer>      
+      </footer>
     </div>
   </body>
 </html>

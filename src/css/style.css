@@ -431,7 +431,7 @@ body {
   font-size: 12px;
 }
 
-.daily-special .buy-button {
+.wrapper .specials-container .daily-special .buy-button {
   background-color: #ffd700;
   border: none;
   border-radius: 5px;
@@ -443,18 +443,18 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.daily-special .buy-button:hover {
+.wrapper .specials-container .daily-special .buy-button:hover {
   background-color: #ffa500;
 }
 
-.cart-content {
+.wrapper .main .cart-content {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
-.cart-content h1 {
+.wrapper .main .cart-content h1 {
   text-align: center;
   font-size: 28px;
   color: #333;
@@ -462,13 +462,13 @@ body {
 }
 
 /* Продуктов списък */
-.cart-items {
+.wrapper .main .cart-content .cart-items {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.cart-items li {
+.wrapper .main .cart-content .cart-items li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -476,11 +476,11 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-.cart-items li:last-child {
+.wrapper .main .cart-content .cart-items li:last-child {
   border-bottom: none;
 }
 
-.cart-items img {
+.wrapper .main .cart-content .cart-items img {
   max-height: 80px;
   border-radius: 8px;
 }
@@ -530,7 +530,6 @@ body {
   background-color: #ffa500;
 }
 
-/* Обща информация и завършване на поръчката */
 .wrapper .main .cart-content .cart-summary {
   margin-top: 20px;
   padding: 20px;
@@ -703,6 +702,10 @@ body {
     padding: 15px 0;
     border-bottom: 1px solid #000000;
   }
+
+  .wrapper .main .news .news-grid {
+    flex-direction: column;
+  }
 }
 
 .contact-container {
@@ -791,4 +794,279 @@ body {
 
 .contact-form button:hover {
   background-color: #a00028;
+}
+
+.wrapper .main .about {
+  max-width: 1200px; /* Центриране и ограничаване на ширината */
+  margin: 40px auto; /* Центриране по хоризонтала */
+  padding: 30px; /* Вътрешен отстъп */
+  background-color: #fff; /* Бял фон */
+  border-radius: 10px; /* Заоблени ъгли */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Сянка за изчистен вид */
+}
+
+/* Заглавия */
+.wrapper .main .about h1,
+.wrapper .main .about h2 {
+  color: #800020; /* Червен цвят */
+  margin-bottom: 20px; /* Отстояние */
+  text-align: left; /* Подравняване на текста */
+}
+
+.wrapper .main .about h1 {
+  font-size: 32px; /* По-голямо заглавие */
+}
+
+.wrapper .main .about h2 {
+  font-size: 24px;
+  border-bottom: 2px solid #ffd700; /* Златна линия под заглавието */
+  padding-bottom: 5px;
+}
+
+/* Параграфи */
+.wrapper .main .about p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333; /* Тъмен текст */
+  margin-bottom: 20px;
+}
+
+/* Списъци */
+.wrapper .main .about ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.wrapper .main .about ul li {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Изображения */
+.wrapper .main .about img {
+  max-width: 100%; /* Адаптиране към ширината на контейнера */
+  height: auto; /* Запазване на пропорциите */
+  margin: 20px 0;
+  border-radius: 10px; /* Заоблени ъгли */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лека сянка */
+}
+
+/* Стилове за дейностите */
+.wrapper .main .activities {
+  max-width: 1200px; /* Центриране и ограничаване на ширината */
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff; /* Бял фон */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Сянка */
+}
+
+/* Заглавия */
+.wrapper .main .activities h1,
+.wrapper .main .activities h2 {
+  color: #800020; /* Червен цвят */
+  margin-bottom: 20px;
+}
+
+.wrapper .main .activities h1 {
+  font-size: 32px; /* Основно заглавие */
+  text-align: center;
+}
+
+.wrapper .main .activities h2 {
+  font-size: 24px; /* Подзаглавие */
+  border-bottom: 2px solid #ffd700; /* Златна линия под заглавията */
+  padding-bottom: 5px;
+}
+
+/* Текст */
+.wrapper .main .activities p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Списъци */
+.wrapper .main .activities ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.wrapper .main .activities ul li {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Изображения */
+.wrapper .main .activities img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лека сянка */
+}
+
+/* Таблица за цените */
+.price-table {
+  width: 100%;
+  border-collapse: collapse; /* Премахва двойните линии */
+  margin: 20px 0;
+  background-color: #fff; /* Бял фон */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Лека сянка */
+}
+
+.price-table th,
+.price-table td {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.price-table th {
+  background-color: #800020; /* Тъмночервен фон за заглавията */
+  color: #fff; /* Бял текст */
+}
+
+.price-table tbody tr:nth-child(even) {
+  background-color: #f8f8f8; /* Светлосив фон за редуване */
+}
+
+.price-table tbody tr:nth-child(odd) {
+  background-color: #fff; /* Бял фон */
+}
+
+.price-table tbody tr:hover {
+  background-color: #ffd700; /* Златен цвят при задържане на мишката */
+}
+
+.price-table td {
+  border-bottom: 1px solid #ddd; /* Линии между редовете */
+}
+
+/* Галерия */
+.wrapper .main .gallery {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .main .gallery h1 {
+  text-align: center;
+  color: #800020;
+  margin-bottom: 20px;
+}
+
+.wrapper .main .gallery p {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Решетка за галерията */
+.wrapper .main .gallery .gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Стил за елементите */
+.wrapper .main .gallery .gallery-item {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .main .gallery .gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.wrapper .main .gallery .gallery-item .caption {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Секция Новини */
+.wrapper .main .news {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .main .news h1 {
+  text-align: center;
+  color: #800020;
+  margin-bottom: 20px;
+}
+
+.wrapper .main .news p {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Решетка за новините */
+.wrapper .main .news .news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Блокове за новини */
+.wrapper .main .news .news-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.wrapper .main .news .news-item:hover {
+  transform: scale(1.02);
+}
+
+.wrapper .main .news .news-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.wrapper .main .news .news-content {
+  padding: 15px;
+}
+
+.wrapper .main .news .news-content h2 {
+  font-size: 20px;
+  color: #800020;
+  margin-bottom: 10px;
+}
+
+.wrapper .main .news .news-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.wrapper .main .news .news-content .date {
+  font-size: 14px;
+  color: #888;
 }
